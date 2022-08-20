@@ -1,0 +1,18 @@
+Padre:
+<h1>{{titulo}}</h1>
+	<ul>
+		<li> Partido 1 </li>
+		<li> Partido 2 </li>
+	</ul>
+
+Nombre partido:
+<input type="text" [(ngModel)] = "nombreP" (keyup) = "mostrarNombre()"/> 
+<p>
+Resultado: {{nombreP}}
+</p>
+<br/>
+
+
+Hijo:
+<partido [nombre] = "nombreP" 
+(pasameDatos) ="verDatos($event)"></partido> <! –– sale dinamicamente lo que se mete en el input ––>
