@@ -1,1 +1,27 @@
 <h1>>{{title}}</h1>
+
+        <div class="input">
+            <form name="formulario" (ngsubmit)="onSubmit()">
+                <div id="valor">
+                    <label id="nombreUsuario"> Nombre de usuario </label>
+                    <input class="Texto" [(ngModel)]="user.name"  name="name" #name="ngModel" type="text" required placeholder="user45">
+                    <span *ngIf="!name.valid && name.touched"> El nombre es obligatorio </span>
+                </div>
+                <div id="valor">
+                    <label id="contrasena"> Contraseña </label>
+                    <input class="Texto" [(ngModel)]="user.password"  name="password" #password="ngModel"  type="password" required >
+                    <span *ngIf="!password.valid && password.touched"> Tienes que introducir una contraseña </span>
+                </div>
+                <div id="valor">
+                    <label id="apellidos"> Apellidos </label>
+                    <input class="Texto" [(ngModel)]="user.surname" name="surname" #surname="ngModel" type="text" required placeholder="Martin">
+                    <span *ngIf="!surname.valid && surname.touched"> Los apellidos son obligatorios </span>
+
+                </div>
+                <div id="valor">
+                    <label id="correo"> Correo electrónico </label>
+                    <input class="Texto" [(ngModel)]="user.email" name="correo_electronico" id="correoInput" type="text" required placeholder="luis22@gmail.com">
+                </div>
+                <button id="Comprobar" type="submit">Dar de alta usuario</button>
+            </form>
+        </div>

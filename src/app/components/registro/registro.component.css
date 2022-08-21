@@ -1,0 +1,18 @@
+/* Formulario */
+  
+  .Texto {
+    width: 30%;
+    height: 5%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #valor{
+    margin-top: 2%;
+  }
+
+/*  #Comprobar{
+      color: #FFFFFF;
+      background-color:  #008000; 
+      align-items: center;
+  }*/
