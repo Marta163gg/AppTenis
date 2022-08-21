@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 //Componentes
 import { AppComponent } from './app.component';
