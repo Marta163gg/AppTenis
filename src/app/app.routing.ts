@@ -7,6 +7,7 @@ import { PartidoComponent } from './components/partidos/partidos.component';
 import { ContactComponent } from './components/contacto/contact.component';
 import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
       { path: '', redirectTo: 'organizacion', pathMatch: 'full'},
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
 	{ path: 'partidos', component: PartidoComponent},
 	{ path: 'contacto', component: ContactComponent},
 	{ path: 'jugadores', component: JugadoresComponent},
-	{ path: 'inicio', component: InicioComponent}
+	{ path: 'inicio', component: InicioComponent},
+	{ path: 'login', component: LoginComponent}
 ];
 
 

@@ -10,7 +10,7 @@ import { PartidoComponent } from './components/partidos/partidos.component';
 import { ContactComponent } from './components/contacto/contact.component';
 import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -20,7 +20,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
     PartidoComponent,
     ContactComponent,
     JugadoresComponent,
-    InicioComponent
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
