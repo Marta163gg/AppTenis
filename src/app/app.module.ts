@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contacto/contact.component';
 import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './components/login/login.component';
     ContactComponent,
     JugadoresComponent,
     InicioComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
