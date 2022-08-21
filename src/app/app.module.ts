@@ -14,6 +14,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 
+import { UserService } from './services/user.service';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     routing
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
