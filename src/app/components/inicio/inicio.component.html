@@ -1,12 +1,14 @@
-<div class="jumbotron">
-	<h1>>{{title}}</h1>
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<div class="col-lg-8 col-lg-offset-2">
+    <div class="jumbotron">
+      <h1>{{title}}</h1>
+      <p>Distruta con nosotros de partidos todos los días en toda la zona de la Laguna </p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button" [routerLink] = "['/partidos']">Ver partidos</a></p>
+          <p><a class="btn btn-success btn-lg" href="#" role="button" [routerLink] = "['/jugadores']">Ver jugadores</a></p>
+    </div>
 </div>
 
-<div class="panel panel-primary">...</div>
-<div class="panel panel-success">...</div>
-<div class="panel panel-info">...</div>
-<div class="panel panel-warning">...</div>
-<div class="panel panel-danger">...</div>
+<div class="col-lg-8 col-lg-offset-2">
+<span class="label label-info" [routerLink] = "['/login']">Login</span>
+<span class="label label-warning" [routerLink] = "['/registro']">Registro</span>
+</div>
+

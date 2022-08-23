@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpResponse, HttpHeaders } from '@angular/common/http';
 import {GLOBAL} from './global';
 import {map} from 'rxjs/operators';
 import { Observable } from 'rxjs';
@@ -13,7 +13,10 @@ export class UserService{
 		this.url = GLOBAL.url;
 	}
 
-	register(){
-		return "Texto en servicio";
-	}
+	// register(user_to_register){
+	// 	let params = JSON.stringify(user_to_register);
+	// 	let headers = new Headers({'Content-Type': 'application/json'});
+
+	// 	return this._http.post(this.url + 'register', params, {headers: headers}).map(res => res.json());
+	// }
 }

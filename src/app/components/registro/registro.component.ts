@@ -13,16 +13,25 @@ import { UserService } from '../../services/user.service';
 export class RegistroComponent {
 
   public title: String;
+  public message: String;
   public user: User;
 
-  //private _userService: UserService (no me deja meterlo como argumento del constructor porque se me borra el formulario)
+  // private _userService: UserService (no me deja meterlo como argumento del constructor porque se me borra el formulario)
   constructor(private _route: ActivatedRoute, private _router: Router){
     this.title = 'Pagina de registro de nuevo usuario';
     this.user = new User('','','','','','ROLE_USER','');
   }
 
   onSubmit(){
-    console.log(this.user);
+    //console.log(this.user);
+    // this._userService.register(this.user).subscribe(
+    //   response =>{
+    //     this.user = response.user;
+    //     this.message = 'Se ha realizado correctamente el registro';
+    //   },error =>{
+    //     console.log(<any>error);
+    //   }
+    // );
   }
 }
 
